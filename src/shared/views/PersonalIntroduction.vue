@@ -3,7 +3,6 @@
     <PageHeader title="个人介绍" />
     <main>
       <section class="profile">
-        <img :src="profileImage" alt="个人头像" class="profile-image">
         <h2>{{ name }}</h2>
         <p class="title">{{ title }}</p>
       </section>
@@ -24,8 +23,8 @@
 </template>
 
 <script>
-import PageHeader from '@/components/PageHeader.vue'
-import { getItem } from '@/utils/storage'
+import PageHeader from '../components/PageHeader.vue'
+import { getItem } from '../utils/storage'
 
 export default {
   name: 'PersonalIntroduction',
@@ -36,7 +35,6 @@ export default {
     return {
       name: '张三',
       title: '软件工程师',
-      profileImage: '/path/to/profile-image.jpg', // 请替换为实际的图片路径
       introduction: '我是一名热爱技术的软件工程师，有5年的开发经验。我擅长前端开发，特别是Vue.js框架。在工作中，我注重代码质量和用户体验，同时也乐于学习新技术。',
       email: 'zhangsan@example.com',
       phone: '123-456-7890',
