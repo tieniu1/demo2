@@ -2,6 +2,7 @@
   <div class="hello">
     <img alt="Vue logo" style="width: 100px;height: 100px;" src="@/assets/logo.png">
     <h1>hello world</h1>
+    <h2>{{ msg }}</h2>
   </div>
 </template>
 
